@@ -29,7 +29,14 @@ struct MarshmelloView: View {
             ZStack(alignment: .center) {
                 VStack(spacing: 0) {
                     HStack {
-                        Image(.icnPin)
+                        switch CalculateDateSecondDifference(){
+                        case 0...10:
+                            Image(.icnPinGray)
+                        case 11...20:
+                            Image(.icnPinGray)
+                        default:
+                            Image(.icnPinWhite)
+                        }
                         
                         Text("\(address)")
                             .suit(.regular, 16)
@@ -47,6 +54,7 @@ struct MarshmelloView: View {
                     
                     Button(action: {
                         isThanks = true
+                        HapticManager.shared.notification(type: .success)
                     }, label: {
                         Text("감사")
                             .suit(.heavy, 32)

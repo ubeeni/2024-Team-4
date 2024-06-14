@@ -22,6 +22,7 @@ struct OnboardingView: View {
                             if currentPage > 0 {
                                 currentPage -= 1
                             }
+                            HapticManager.shared.notification(type: .success)
                         }) {
                             Image(systemName: "chevron.left")
                                 .foregroundStyle(.text)
@@ -57,6 +58,7 @@ struct OnboardingView: View {
                     if currentPage < totalPages - 1 {
                         Button(action: {
                             currentPage += 1
+                            HapticManager.shared.notification(type: .success)
                         }, label: {
                             Text("다음")
                                 .suit(.bold, 20)
