@@ -13,6 +13,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var location: CLLocation?
     @Published var address: String?
     @Published var authorizationStatus: CLAuthorizationStatus?
+    let standardLocation = CLLocation(latitude: 36.01433679, longitude: 129.32563839)
 
     override init() {
         super.init()
@@ -20,6 +21,11 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.allowsBackgroundLocationUpdates = true
         self.locationManager.requestWhenInUseAuthorization()
+    }
+    
+    func calculateDistance() -> Double{
+        guard let location = self.location else { return 0.0 }
+        return location.distance(from: self.standardLocation)
     }
 
     func startUpdatingLocation() {
