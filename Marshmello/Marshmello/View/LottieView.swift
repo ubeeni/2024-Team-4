@@ -14,6 +14,14 @@ struct LottieView: UIViewRepresentable {
     
     var filename: String
     
+    class Coordinator: NSObject {
+        var animationView: LottieAnimationView?
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         let view = UIView(frame: .zero)
         
@@ -30,10 +38,15 @@ struct LottieView: UIViewRepresentable {
             animationView.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
         
+        context.coordinator.animationView = animationView
+        
         return view
     }
 
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) {
-        // Do nothing
+        if let animationView = context.coordinator.animationView {
+            animationView.animation = LottieAnimation.named(filename)
+            animationView.play()
+        }
     }
 }

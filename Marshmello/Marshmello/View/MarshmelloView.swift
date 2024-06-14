@@ -9,16 +9,22 @@ import SwiftUI
 
 struct MarshmelloView: View {
     @Binding var address: String
-    
+    @State var isThanks: Bool = false
     @State private var isButtonPressed = false
-    @State var isHover = false
     @StateObject private var locationManager = LocationManager()
     @State private var startDate : Date = Date()
     @State private var currentDate : Date = Date()
     
     var body: some View {
         ZStack {
-            Color.marshmellow.ignoresSafeArea()
+            switch CalculateDateSecondDifference(){
+            case 0...10:
+                Color.firstStep.ignoresSafeArea()
+            case 11...20:
+                Color.secondStep.ignoresSafeArea()
+            default:
+                Color.thirdStep.ignoresSafeArea()
+            }
             
             ZStack(alignment: .center) {
                 VStack(spacing: 0) {
@@ -28,51 +34,72 @@ struct MarshmelloView: View {
                         Text("\(address)")
                             .suit(.regular, 16)
                             .multilineTextAlignment(.center)
-                            .foregroundStyle(.pinkText)
+                            .foregroundStyle({
+                                switch CalculateDateSecondDifference(){
+                                case 0...20:
+                                    return Color.firstSecondText
+                                default:
+                                    return Color.white
+                                }
+                            }())
                     }
                     .padding(.top, 40)
                     
                     Button(action: {
-                        
+                        isThanks = true
                     }, label: {
                         Text("감사")
                             .suit(.heavy, 32)
                             .padding(.horizontal, 24)
                             .padding(.vertical, 6)
-                            .foregroundStyle(.marshmellow)
-                            .background(RoundedRectangle(cornerRadius: 100).foregroundStyle(isHover ? .clickedButton : .pinkButton))
+                            .foregroundStyle(.white)
+                            .background(RoundedRectangle(cornerRadius: 100).foregroundStyle({
+                                switch CalculateDateSecondDifference(){
+                                case 0...10:
+                                    return Color.firstThanks
+                                case 11...20:
+                                    return Color.secondThanks
+                                default:
+                                    return Color.thirdThanks
+                                }
+                            }()))
                     })
-                    .onHover { hover in
-                        isHover = hover
-                    }
                     .padding(.top, 30)
                     
                     Spacer()
                     
                     switch CalculateDateSecondDifference(){
                     case 0...10:
-                        LottieView(filename: "fire")
-                            .frame(width: 150, height: 150)
+                        LottieView(filename: isThanks ? "small fire_g" : "small fire")
+                            .frame(width: 200, height: 200)
                     case 11...20:
-                        LottieView(filename: "fire")
+                        LottieView(filename: isThanks ? "middle fire_g" : "middle fire")
                             .frame(width: 200, height: 200)
                     default:
-                        LottieView(filename: "fire")
-                            .frame(width: 250, height: 250)
+                        LottieView(filename: isThanks ? "big fire_g" : "big fire")
+                            .frame(width: 200, height: 200)
                     }
                     
                     Image(.firewood)
                         .padding(.bottom, 40)
                 }
                 
-                Image(.marshmello1)
-                    .padding(.bottom, 10)
+                switch CalculateDateSecondDifference(){
+                case 0...10:
+                    Image(.marshmello2D1)
+                        .padding(.bottom, 10)
+                case 11...20:
+                    Image(.marshmello2D2)
+                        .padding(.bottom, 10)
+                default:
+                    Image(.marshmello2D3)
+                        .padding(.bottom, 10)
+                }
             }
             .navigationBarBackButtonHidden()
         }
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { Timer in
-                print(CalculateDateSecondDifference())
                 if (locationManager.calculateDistance() < 25){
                     currentDate = Calendar.current.date(byAdding: .second, value: 1, to: currentDate)!
                 }else if (locationManager.calculateDistance() > 25 && CalculateDateSecondDifference() > 0){
@@ -80,6 +107,11 @@ struct MarshmelloView: View {
                 }
                 
             })
+        }
+        .onChange(of: isThanks) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                isThanks = false
+            }
         }
     }
     
