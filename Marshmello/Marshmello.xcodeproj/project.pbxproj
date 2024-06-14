@@ -13,6 +13,16 @@
 		1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB82C1C733400F7B37E /* Preview Assets.xcassets */; };
 		1E3B5BC02C1C736D00F7B37E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BBF2C1C736D00F7B37E /* OnboardingView.swift */; };
 		1E3B5BC22C1C738400F7B37E /* MarshmelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */; };
+		1E3B5BCF2C1C797400F7B37E /* SUIT-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC62C1C797400F7B37E /* SUIT-Regular.otf */; };
+		1E3B5BD02C1C797400F7B37E /* SUIT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC72C1C797400F7B37E /* SUIT-Light.otf */; };
+		1E3B5BD12C1C797400F7B37E /* SUIT-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC82C1C797400F7B37E /* SUIT-ExtraLight.otf */; };
+		1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC92C1C797400F7B37E /* SUIT-Heavy.otf */; };
+		1E3B5BD32C1C797400F7B37E /* SUIT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCA2C1C797400F7B37E /* SUIT-Medium.otf */; };
+		1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCB2C1C797400F7B37E /* SUIT-SemiBold.otf */; };
+		1E3B5BD52C1C797400F7B37E /* SUIT-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCC2C1C797400F7B37E /* SUIT-Thin.otf */; };
+		1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCD2C1C797400F7B37E /* SUIT-ExtraBold.otf */; };
+		1E3B5BD72C1C797400F7B37E /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCE2C1C797400F7B37E /* SUIT-Bold.otf */; };
+		1E3B5BDA2C1C7A7E00F7B37E /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BD92C1C7A7E00F7B37E /* FontManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +33,17 @@
 		1E3B5BB82C1C733400F7B37E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E3B5BBF2C1C736D00F7B37E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarshmelloView.swift; sourceTree = "<group>"; };
+		1E3B5BC62C1C797400F7B37E /* SUIT-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.otf"; sourceTree = "<group>"; };
+		1E3B5BC72C1C797400F7B37E /* SUIT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Light.otf"; sourceTree = "<group>"; };
+		1E3B5BC82C1C797400F7B37E /* SUIT-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraLight.otf"; sourceTree = "<group>"; };
+		1E3B5BC92C1C797400F7B37E /* SUIT-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Heavy.otf"; sourceTree = "<group>"; };
+		1E3B5BCA2C1C797400F7B37E /* SUIT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.otf"; sourceTree = "<group>"; };
+		1E3B5BCB2C1C797400F7B37E /* SUIT-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.otf"; sourceTree = "<group>"; };
+		1E3B5BCC2C1C797400F7B37E /* SUIT-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Thin.otf"; sourceTree = "<group>"; };
+		1E3B5BCD2C1C797400F7B37E /* SUIT-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraBold.otf"; sourceTree = "<group>"; };
+		1E3B5BCE2C1C797400F7B37E /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
+		1E3B5BD82C1C79CE00F7B37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E3B5BD92C1C7A7E00F7B37E /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,7 @@
 		1E3B5BB02C1C733200F7B37E /* Marshmello */ = {
 			isa = PBXGroup;
 			children = (
+				1E3B5BD82C1C79CE00F7B37E /* Info.plist */,
 				1E3B5BB12C1C733200F7B37E /* MarshmelloApp.swift */,
 				1E3B5BC32C1C738C00F7B37E /* View */,
 				1E3B5BC42C1C739A00F7B37E /* Resource */,
@@ -84,9 +106,27 @@
 		1E3B5BC42C1C739A00F7B37E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1E3B5BC52C1C796800F7B37E /* Font */,
 				1E3B5BB52C1C733400F7B37E /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		1E3B5BC52C1C796800F7B37E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1E3B5BCE2C1C797400F7B37E /* SUIT-Bold.otf */,
+				1E3B5BCD2C1C797400F7B37E /* SUIT-ExtraBold.otf */,
+				1E3B5BC82C1C797400F7B37E /* SUIT-ExtraLight.otf */,
+				1E3B5BC92C1C797400F7B37E /* SUIT-Heavy.otf */,
+				1E3B5BC72C1C797400F7B37E /* SUIT-Light.otf */,
+				1E3B5BCA2C1C797400F7B37E /* SUIT-Medium.otf */,
+				1E3B5BC62C1C797400F7B37E /* SUIT-Regular.otf */,
+				1E3B5BCB2C1C797400F7B37E /* SUIT-SemiBold.otf */,
+				1E3B5BCC2C1C797400F7B37E /* SUIT-Thin.otf */,
+				1E3B5BD92C1C7A7E00F7B37E /* FontManager.swift */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +187,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */,
+				1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */,
+				1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */,
 				1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */,
+				1E3B5BD32C1C797400F7B37E /* SUIT-Medium.otf in Resources */,
+				1E3B5BCF2C1C797400F7B37E /* SUIT-Regular.otf in Resources */,
+				1E3B5BD72C1C797400F7B37E /* SUIT-Bold.otf in Resources */,
 				1E3B5BB62C1C733400F7B37E /* Assets.xcassets in Resources */,
+				1E3B5BD02C1C797400F7B37E /* SUIT-Light.otf in Resources */,
+				1E3B5BD12C1C797400F7B37E /* SUIT-ExtraLight.otf in Resources */,
+				1E3B5BD52C1C797400F7B37E /* SUIT-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3B5BDA2C1C7A7E00F7B37E /* FontManager.swift in Sources */,
 				1E3B5BC02C1C736D00F7B37E /* OnboardingView.swift in Sources */,
 				1E3B5BB42C1C733200F7B37E /* ContentView.swift in Sources */,
 				1E3B5BC22C1C738400F7B37E /* MarshmelloView.swift in Sources */,
@@ -299,6 +349,7 @@
 				DEVELOPMENT_TEAM = R62RZ89ZRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marshmello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +380,7 @@
 				DEVELOPMENT_TEAM = R62RZ89ZRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marshmello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
