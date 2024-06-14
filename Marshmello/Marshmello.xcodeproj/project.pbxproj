@@ -23,6 +23,10 @@
 		1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCD2C1C797400F7B37E /* SUIT-ExtraBold.otf */; };
 		1E3B5BD72C1C797400F7B37E /* SUIT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BCE2C1C797400F7B37E /* SUIT-Bold.otf */; };
 		1E3B5BDA2C1C7A7E00F7B37E /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BD92C1C7A7E00F7B37E /* FontManager.swift */; };
+		1E3B5BDC2C1C86B400F7B37E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BDB2C1C86B400F7B37E /* LottieView.swift */; };
+		1E3B5BDF2C1C86DB00F7B37E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1E3B5BDE2C1C86DB00F7B37E /* Lottie */; };
+		1E3B5BE12C1C966A00F7B37E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */; };
+		1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE52C1CBD6100F7B37E /* fire.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,9 @@
 		1E3B5BCE2C1C797400F7B37E /* SUIT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.otf"; sourceTree = "<group>"; };
 		1E3B5BD82C1C79CE00F7B37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1E3B5BD92C1C7A7E00F7B37E /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		1E3B5BDB2C1C86B400F7B37E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1E3B5BE52C1CBD6100F7B37E /* fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fire.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3B5BDF2C1C86DB00F7B37E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,7 @@
 				1E3B5BB32C1C733200F7B37E /* ContentView.swift */,
 				1E3B5BBF2C1C736D00F7B37E /* OnboardingView.swift */,
 				1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */,
+				1E3B5BDB2C1C86B400F7B37E /* LottieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +115,8 @@
 		1E3B5BC42C1C739A00F7B37E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1E3B5BE52C1CBD6100F7B37E /* fire.json */,
+				1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */,
 				1E3B5BC52C1C796800F7B37E /* Font */,
 				1E3B5BB52C1C733400F7B37E /* Assets.xcassets */,
 			);
@@ -145,6 +156,9 @@
 			dependencies = (
 			);
 			name = Marshmello;
+			packageProductDependencies = (
+				1E3B5BDE2C1C86DB00F7B37E /* Lottie */,
+			);
 			productName = Marshmello;
 			productReference = 1E3B5BAE2C1C733200F7B37E /* Marshmello.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 1E3B5BA52C1C733200F7B37E;
+			packageReferences = (
+				1E3B5BDD2C1C86DB00F7B37E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 1E3B5BAF2C1C733200F7B37E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -190,6 +207,7 @@
 				1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */,
 				1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */,
 				1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */,
+				1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */,
 				1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */,
 				1E3B5BD32C1C797400F7B37E /* SUIT-Medium.otf in Resources */,
 				1E3B5BCF2C1C797400F7B37E /* SUIT-Regular.otf in Resources */,
@@ -211,8 +229,10 @@
 				1E3B5BDA2C1C7A7E00F7B37E /* FontManager.swift in Sources */,
 				1E3B5BC02C1C736D00F7B37E /* OnboardingView.swift in Sources */,
 				1E3B5BB42C1C733200F7B37E /* ContentView.swift in Sources */,
+				1E3B5BE12C1C966A00F7B37E /* LocationManager.swift in Sources */,
 				1E3B5BC22C1C738400F7B37E /* MarshmelloView.swift in Sources */,
 				1E3B5BB22C1C733200F7B37E /* MarshmelloApp.swift in Sources */,
+				1E3B5BDC2C1C86B400F7B37E /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +370,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Marshmello/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치 사용을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,6 +402,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Marshmello/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치 사용을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E3B5BDD2C1C86DB00F7B37E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E3B5BDE2C1C86DB00F7B37E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E3B5BDD2C1C86DB00F7B37E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E3B5BA62C1C733200F7B37E /* Project object */;
 }

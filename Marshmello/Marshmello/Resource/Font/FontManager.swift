@@ -19,7 +19,7 @@ struct SuitModifier: ViewModifier {
         case semiBold = "SUIT-SemiBold"
         case bold = "SUIT-Bold"
         case extraBold = "SUIT-ExtraBold"
-        case black = "SUIT-Black"
+        case heavy = "SUIT-Heavy"
     }
     
     var weight: FontWeight
