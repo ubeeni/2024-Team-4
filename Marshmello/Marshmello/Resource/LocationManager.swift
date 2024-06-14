@@ -13,7 +13,17 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var location: CLLocation?
     @Published var address: String?
     @Published var authorizationStatus: CLAuthorizationStatus?
-    let standardLocation = CLLocation(latitude: 36.01433679, longitude: 129.32563839)
+    let standardLocation: CLLocation = {
+        if let addressCoordinate = UserDefaults.standard.array(forKey: "addressCoordinate") as? [[String: Double]],
+           let firstCoordinate = addressCoordinate.first,
+           let latitude = firstCoordinate["latitude"],
+           let longitude = firstCoordinate["longitude"] {
+            return CLLocation(latitude: latitude, longitude: longitude)
+        } else {
+            return CLLocation(latitude: 36.01433679, longitude: 129.32563839)
+        }
+    }()
+    
 
     override init() {
         super.init()

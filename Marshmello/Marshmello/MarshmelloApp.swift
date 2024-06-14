@@ -9,10 +9,16 @@ import SwiftUI
 
 @main
 struct MarshmelloApp: App {
+    @State var addressName = UserDefaults.standard.string(forKey: "addressName") ?? ""
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            OnboardingView()
+            if (addressName != ""){
+                MarshmelloView(address: $addressName)
+            }
+            else{
+                OnboardingView()
+            }
         }
     }
 }

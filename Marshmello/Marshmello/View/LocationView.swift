@@ -70,6 +70,8 @@ struct LocationView: View {
                         showAddress = true
                         address = locationManager.address ?? ""
                         HapticManager.shared.notification(type: .success)
+                        UserDefaults.standard.set(address, forKey: "addressName")
+                        UserDefaults.standard.set(["latitude": locationManager.location?.coordinate.latitude, "longtitude": locationManager.location?.coordinate.longitude], forKey: "addressCoordinate")
                     }, label: {
                         Text(buttonText)
                             .suit(.bold, 20)
