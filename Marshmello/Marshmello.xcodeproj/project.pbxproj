@@ -28,6 +28,12 @@
 		1E3B5BE12C1C966A00F7B37E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */; };
 		1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE52C1CBD6100F7B37E /* fire.json */; };
 		1E3B5BEA2C1CD65300F7B37E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE92C1CD65300F7B37E /* LocationView.swift */; };
+		510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E236F2C1CEEED0048B2B3 /* middle fire_g.json */; };
+		510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23702C1CEEED0048B2B3 /* small fire_g.json */; };
+		510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23712C1CEEED0048B2B3 /* big fire_g.json */; };
+		510E23782C1CEEEE0048B2B3 /* big fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23722C1CEEED0048B2B3 /* big fire.json */; };
+		510E23792C1CEEEE0048B2B3 /* small fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23732C1CEEEE0048B2B3 /* small fire.json */; };
+		510E237A2C1CEEEE0048B2B3 /* middle fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23742C1CEEEE0048B2B3 /* middle fire.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,12 @@
 		1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1E3B5BE52C1CBD6100F7B37E /* fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fire.json; sourceTree = "<group>"; };
 		1E3B5BE92C1CD65300F7B37E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		510E236F2C1CEEED0048B2B3 /* middle fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire_g.json"; sourceTree = "<group>"; };
+		510E23702C1CEEED0048B2B3 /* small fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire_g.json"; sourceTree = "<group>"; };
+		510E23712C1CEEED0048B2B3 /* big fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire_g.json"; sourceTree = "<group>"; };
+		510E23722C1CEEED0048B2B3 /* big fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire.json"; sourceTree = "<group>"; };
+		510E23732C1CEEEE0048B2B3 /* small fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire.json"; sourceTree = "<group>"; };
+		510E23742C1CEEEE0048B2B3 /* middle fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,12 @@
 		1E3B5BC42C1C739A00F7B37E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				510E23712C1CEEED0048B2B3 /* big fire_g.json */,
+				510E23722C1CEEED0048B2B3 /* big fire.json */,
+				510E236F2C1CEEED0048B2B3 /* middle fire_g.json */,
+				510E23742C1CEEEE0048B2B3 /* middle fire.json */,
+				510E23702C1CEEED0048B2B3 /* small fire_g.json */,
+				510E23732C1CEEEE0048B2B3 /* small fire.json */,
 				1E3B5BE52C1CBD6100F7B37E /* fire.json */,
 				1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */,
 				1E3B5BC52C1C796800F7B37E /* Font */,
@@ -210,13 +228,19 @@
 				1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */,
 				1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */,
 				1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */,
+				510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */,
+				510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */,
 				1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */,
 				1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */,
+				510E23792C1CEEEE0048B2B3 /* small fire.json in Resources */,
 				1E3B5BD32C1C797400F7B37E /* SUIT-Medium.otf in Resources */,
+				510E237A2C1CEEEE0048B2B3 /* middle fire.json in Resources */,
 				1E3B5BCF2C1C797400F7B37E /* SUIT-Regular.otf in Resources */,
+				510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */,
 				1E3B5BD72C1C797400F7B37E /* SUIT-Bold.otf in Resources */,
 				1E3B5BB62C1C733400F7B37E /* Assets.xcassets in Resources */,
 				1E3B5BD02C1C797400F7B37E /* SUIT-Light.otf in Resources */,
+				510E23782C1CEEEE0048B2B3 /* big fire.json in Resources */,
 				1E3B5BD12C1C797400F7B37E /* SUIT-ExtraLight.otf in Resources */,
 				1E3B5BD52C1C797400F7B37E /* SUIT-Thin.otf in Resources */,
 			);
