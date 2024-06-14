@@ -56,6 +56,7 @@ struct LocationView: View {
                 } else {
                     Button(action: {
                         locationManager.startUpdatingLocation()
+                        HapticManager.shared.notification(type: .success)
                     }, label: {
                         Text("여기가 아니에요")
                             .suit(.semiBold, 18)
@@ -68,6 +69,7 @@ struct LocationView: View {
                         buttonText = "맞아요"
                         showAddress = true
                         address = locationManager.address ?? ""
+                        HapticManager.shared.notification(type: .success)
                     }, label: {
                         Text(buttonText)
                             .suit(.bold, 20)
