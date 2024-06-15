@@ -31,6 +31,7 @@
 		1EC71FA52C1D162D00CE5297 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EC71FA42C1D162C00CE5297 /* confetti.json */; };
 		1EC71FA72C1D267D00CE5297 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC71FA62C1D267D00CE5297 /* GuideView.swift */; };
 		1EC71FA82C1D2F1100CE5297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB52C1C733400F7B37E /* Assets.xcassets */; };
+		1EC71FAA2C1D31AC00CE5297 /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC71FA92C1D31AC00CE5297 /* ChangeView.swift */; };
 		510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E236F2C1CEEED0048B2B3 /* middle fire_g.json */; };
 		510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23702C1CEEED0048B2B3 /* small fire_g.json */; };
 		510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23712C1CEEED0048B2B3 /* big fire_g.json */; };
@@ -65,6 +66,7 @@
 		1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		1EC71FA42C1D162C00CE5297 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		1EC71FA62C1D267D00CE5297 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		1EC71FA92C1D31AC00CE5297 /* ChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
 		510E236F2C1CEEED0048B2B3 /* middle fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire_g.json"; sourceTree = "<group>"; };
 		510E23702C1CEEED0048B2B3 /* small fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire_g.json"; sourceTree = "<group>"; };
 		510E23712C1CEEED0048B2B3 /* big fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire_g.json"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */,
 				1EC71FA62C1D267D00CE5297 /* GuideView.swift */,
 				1E3B5BDB2C1C86B400F7B37E /* LottieView.swift */,
+				1EC71FA92C1D31AC00CE5297 /* ChangeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				1E3B5BC22C1C738400F7B37E /* MarshmelloView.swift in Sources */,
 				1E3B5BB22C1C733200F7B37E /* MarshmelloApp.swift in Sources */,
 				1E3B5BF62C1CFEBD00F7B37E /* HapticManager.swift in Sources */,
+				1EC71FAA2C1D31AC00CE5297 /* ChangeView.swift in Sources */,
 				1E3B5BDC2C1C86B400F7B37E /* LottieView.swift in Sources */,
 				1EC71FA72C1D267D00CE5297 /* GuideView.swift in Sources */,
 			);
