@@ -78,14 +78,35 @@ struct MarshmelloView: View {
                     
                     switch CalculateDateSecondDifference(){
                     case 0...10:
-                        LottieView(filename: isThanks ? "small fire_g" : "small fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "small fire_g" : "small fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 200, height: 200)
+                            }
+                        }
                     case 11...20:
-                        LottieView(filename: isThanks ? "middle fire_g" : "middle fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "middle fire_g" : "middle fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 200, height: 200)
+                            }
+                        }
                     default:
-                        LottieView(filename: isThanks ? "big fire_g" : "big fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "big fire_g" : "big fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 300, height: 200)
+                            }
+                        }
                     }
                     
                     Image(.firewood)

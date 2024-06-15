@@ -29,6 +29,7 @@
 		1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE52C1CBD6100F7B37E /* fire.json */; };
 		1E3B5BEA2C1CD65300F7B37E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE92C1CD65300F7B37E /* LocationView.swift */; };
 		1E3B5BF62C1CFEBD00F7B37E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */; };
+		1EC71FA52C1D162D00CE5297 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EC71FA42C1D162C00CE5297 /* confetti.json */; };
 		510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E236F2C1CEEED0048B2B3 /* middle fire_g.json */; };
 		510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23702C1CEEED0048B2B3 /* small fire_g.json */; };
 		510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23712C1CEEED0048B2B3 /* big fire_g.json */; };
@@ -61,6 +62,7 @@
 		1E3B5BE52C1CBD6100F7B37E /* fire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fire.json; sourceTree = "<group>"; };
 		1E3B5BE92C1CD65300F7B37E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		1EC71FA42C1D162C00CE5297 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		510E236F2C1CEEED0048B2B3 /* middle fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire_g.json"; sourceTree = "<group>"; };
 		510E23702C1CEEED0048B2B3 /* small fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire_g.json"; sourceTree = "<group>"; };
 		510E23712C1CEEED0048B2B3 /* big fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire_g.json"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				510E23702C1CEEED0048B2B3 /* small fire_g.json */,
 				510E23732C1CEEEE0048B2B3 /* small fire.json */,
 				1E3B5BE52C1CBD6100F7B37E /* fire.json */,
+				1EC71FA42C1D162C00CE5297 /* confetti.json */,
 				1E3B5BE02C1C966A00F7B37E /* LocationManager.swift */,
 				1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */,
 				1E3B5BC52C1C796800F7B37E /* Font */,
@@ -235,6 +238,7 @@
 				510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */,
 				1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */,
 				1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */,
+				1EC71FA52C1D162D00CE5297 /* confetti.json in Resources */,
 				510E23792C1CEEEE0048B2B3 /* small fire.json in Resources */,
 				1E3B5BD32C1C797400F7B37E /* SUIT-Medium.otf in Resources */,
 				510E237A2C1CEEEE0048B2B3 /* middle fire.json in Resources */,
