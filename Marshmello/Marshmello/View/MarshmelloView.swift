@@ -13,7 +13,10 @@ struct MarshmelloView: View {
     @State private var isButtonPressed = false
     @StateObject private var locationManager = LocationManager()
     @State private var startDate : Date = Date()
-    @State private var currentDate : Date = Date()
+    @State private var currentDate : Date = {
+        let stepData = UserDefaults.standard.integer(forKey: "step")
+        return Calendar.current.date(byAdding: .second, value: stepData, to: Date())!
+    }()
     
     var body: some View {
         ZStack {
@@ -125,6 +128,7 @@ struct MarshmelloView: View {
     
     func CalculateDateSecondDifference() -> Int{
         if let secondDifference = Calendar.current.dateComponents([.second], from: self.startDate, to: self.currentDate).second{
+            UserDefaults.standard.set(secondDifference, forKey: "step")
                 return secondDifference
             }
             else{
