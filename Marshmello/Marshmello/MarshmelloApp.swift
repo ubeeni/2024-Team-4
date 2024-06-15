@@ -10,6 +10,11 @@ import SwiftUI
 @main
 struct MarshmelloApp: App {
     @State var addressName = UserDefaults.standard.string(forKey: "addressName") ?? ""
+    
+    init() {
+        Thread.sleep(forTimeInterval: 1)
+    }
+    
     var body: some Scene {
         WindowGroup {
             //ContentView()

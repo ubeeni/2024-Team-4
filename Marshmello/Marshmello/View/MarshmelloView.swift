@@ -11,6 +11,7 @@ struct MarshmelloView: View {
     @Binding var address: String
     @State var isThanks: Bool = false
     @State private var isButtonPressed = false
+    @State private var showOnboarding = false
     @StateObject private var locationManager = LocationManager()
     @State private var startDate : Date = Date()
     @State private var currentDate : Date = Date()
@@ -29,11 +30,14 @@ struct MarshmelloView: View {
             ZStack(alignment: .center) {
                 VStack(spacing: 0) {
                     HStack {
+                        Spacer()
+                        Spacer()
+                        
                         switch CalculateDateSecondDifference(){
                         case 0...10:
                             Image(.icnPinGray)
                         case 11...20:
-                            Image(.icnPinGray)
+                            Image(.icnPinYellow)
                         default:
                             Image(.icnPinWhite)
                         }
@@ -43,14 +47,38 @@ struct MarshmelloView: View {
                             .multilineTextAlignment(.center)
                             .foregroundStyle({
                                 switch CalculateDateSecondDifference(){
-                                case 0...20:
+                                case 0...10:
                                     return Color.firstSecondText
+                                case 11...20:
+                                    return Color.secondSecondText
                                 default:
                                     return Color.white
                                 }
                             }())
+                        
+                        Spacer()
+                        
+                        Button {
+                            showOnboarding = true
+                        } label: {
+                            Image(systemName: "questionmark.circle")
+                                .resizable()
+                                .foregroundStyle({
+                                    switch CalculateDateSecondDifference(){
+                                    case 0...10:
+                                        return Color.firstThanks
+                                    case 11...20:
+                                        return Color.secondThanks
+                                    default:
+                                        return Color.white
+                                    }
+                                }())
+                                .frame(width: 25, height: 25)
+                        }
+                        
+                        Spacer()
                     }
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                     
                     Button(action: {
                         isThanks = true
@@ -72,20 +100,41 @@ struct MarshmelloView: View {
                                 }
                             }()))
                     })
-                    .padding(.top, 30)
+                    .padding(.top, 40)
                     
                     Spacer()
                     
                     switch CalculateDateSecondDifference(){
                     case 0...10:
-                        LottieView(filename: isThanks ? "small fire_g" : "small fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "small fire_g" : "small fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 200, height: 200)
+                            }
+                        }
                     case 11...20:
-                        LottieView(filename: isThanks ? "middle fire_g" : "middle fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "middle fire_g" : "middle fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 200, height: 200)
+                            }
+                        }
                     default:
-                        LottieView(filename: isThanks ? "big fire_g" : "big fire")
-                            .frame(width: 200, height: 200)
+                        ZStack {
+                            LottieView(filename: isThanks ? "big fire_g" : "big fire")
+                                .frame(width: 200, height: 200)
+                            
+                            if isThanks {
+                                LottieView(filename: "confetti")
+                                    .frame(width: 300, height: 200)
+                            }
+                        }
                     }
                     
                     Image(.firewood)
@@ -95,13 +144,13 @@ struct MarshmelloView: View {
                 switch CalculateDateSecondDifference(){
                 case 0...10:
                     Image(.marshmello2D1)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, 30)
                 case 11...20:
                     Image(.marshmello2D2)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, 30)
                 default:
                     Image(.marshmello2D3)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, 30)
                 }
             }
             .navigationBarBackButtonHidden()
@@ -120,6 +169,9 @@ struct MarshmelloView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                 isThanks = false
             }
+        }
+        .sheet(isPresented: $showOnboarding) {
+            GuideView()
         }
     }
     
