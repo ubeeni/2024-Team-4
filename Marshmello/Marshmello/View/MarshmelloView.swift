@@ -18,6 +18,7 @@ struct MarshmelloView: View {
         let stepData = UserDefaults.standard.integer(forKey: "step")
         return Calendar.current.date(byAdding: .second, value: stepData, to: Date())!
     }()
+    @State private var showChangeView: Bool = false
     
     var body: some View {
         ZStack {
@@ -36,28 +37,36 @@ struct MarshmelloView: View {
                         Spacer()
                         Spacer()
                         
-                        switch CalculateDateSecondDifference(){
-                        case 0...10:
-                            Image(.icnPinGray)
-                        case 11...20:
-                            Image(.icnPinYellow)
-                        default:
-                            Image(.icnPinWhite)
-                        }
+                        Button(action: {
+                            showChangeView.toggle()
+                        }, label: {
+                            switch CalculateDateSecondDifference(){
+                            case 0...10:
+                                Image(.icnPinGray)
+                            case 11...20:
+                                Image(.icnPinYellow)
+                            default:
+                                Image(.icnPinWhite)
+                            }
+                            
+                            Text("\(address)")
+                                .suit(.regular, 16)
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle({
+                                    switch CalculateDateSecondDifference(){
+                                    case 0...10:
+                                        return Color.firstSecondText
+                                    case 11...20:
+                                        return Color.secondSecondText
+                                    default:
+                                        return Color.white
+                                    }
+                                }())
+                        })
+                        .sheet(isPresented: $showChangeView, content: {
+                            ChangeView(address: $address)
+                        })
                         
-                        Text("\(address)")
-                            .suit(.regular, 16)
-                            .multilineTextAlignment(.center)
-                            .foregroundStyle({
-                                switch CalculateDateSecondDifference(){
-                                case 0...10:
-                                    return Color.firstSecondText
-                                case 11...20:
-                                    return Color.secondSecondText
-                                default:
-                                    return Color.white
-                                }
-                            }())
                         
                         Spacer()
                         
