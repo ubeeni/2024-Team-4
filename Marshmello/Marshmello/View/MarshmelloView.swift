@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+var player: AVAudioPlayer?
 
 struct MarshmelloView: View {
     @Binding var address: String
@@ -95,6 +98,7 @@ struct MarshmelloView: View {
                     Button(action: {
                         isThanks = true
                         HapticManager.shared.notification(type: .success)
+                        playSound()
                     }, label: {
                         Text("감사")
                             .suit(.heavy, 32)
@@ -190,10 +194,21 @@ struct MarshmelloView: View {
     func CalculateDateSecondDifference() -> Int{
         if let secondDifference = Calendar.current.dateComponents([.second], from: self.startDate, to: self.currentDate).second{
             UserDefaults.standard.set(secondDifference, forKey: "step")
-                return secondDifference
-            }
-            else{
-                return 0
-            }
+            return secondDifference
         }
+        else{
+            return 0
+        }
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "gamsa", withExtension: "m4a") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        } catch let error {
+            print("Error playing sound. \(error.localizedDescription)")
+        }
+    }
 }
