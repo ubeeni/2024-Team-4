@@ -32,6 +32,7 @@
 		1EC71FA72C1D267D00CE5297 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC71FA62C1D267D00CE5297 /* GuideView.swift */; };
 		1EC71FA82C1D2F1100CE5297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB52C1C733400F7B37E /* Assets.xcassets */; };
 		1EC71FAA2C1D31AC00CE5297 /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC71FA92C1D31AC00CE5297 /* ChangeView.swift */; };
+		1EC71FAC2C1D388D00CE5297 /* gamsa.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EC71FAB2C1D388D00CE5297 /* gamsa.m4a */; };
 		510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E236F2C1CEEED0048B2B3 /* middle fire_g.json */; };
 		510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23702C1CEEED0048B2B3 /* small fire_g.json */; };
 		510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23712C1CEEED0048B2B3 /* big fire_g.json */; };
@@ -67,6 +68,7 @@
 		1EC71FA42C1D162C00CE5297 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		1EC71FA62C1D267D00CE5297 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		1EC71FA92C1D31AC00CE5297 /* ChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
+		1EC71FAB2C1D388D00CE5297 /* gamsa.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gamsa.m4a; sourceTree = "<group>"; };
 		510E236F2C1CEEED0048B2B3 /* middle fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire_g.json"; sourceTree = "<group>"; };
 		510E23702C1CEEED0048B2B3 /* small fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire_g.json"; sourceTree = "<group>"; };
 		510E23712C1CEEED0048B2B3 /* big fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire_g.json"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		1E3B5BC42C1C739A00F7B37E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1EC71FAB2C1D388D00CE5297 /* gamsa.m4a */,
 				510E23712C1CEEED0048B2B3 /* big fire_g.json */,
 				510E23722C1CEEED0048B2B3 /* big fire.json */,
 				510E236F2C1CEEED0048B2B3 /* middle fire_g.json */,
@@ -239,6 +242,7 @@
 			files = (
 				1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */,
 				1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */,
+				1EC71FAC2C1D388D00CE5297 /* gamsa.m4a in Resources */,
 				1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */,
 				1EC71FA82C1D2F1100CE5297 /* Assets.xcassets in Resources */,
 				510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */,
