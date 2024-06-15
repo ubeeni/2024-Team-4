@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E3B5BB22C1C733200F7B37E /* MarshmelloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB12C1C733200F7B37E /* MarshmelloApp.swift */; };
 		1E3B5BB42C1C733200F7B37E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB32C1C733200F7B37E /* ContentView.swift */; };
-		1E3B5BB62C1C733400F7B37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB52C1C733400F7B37E /* Assets.xcassets */; };
 		1E3B5BB92C1C733400F7B37E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB82C1C733400F7B37E /* Preview Assets.xcassets */; };
 		1E3B5BC02C1C736D00F7B37E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BBF2C1C736D00F7B37E /* OnboardingView.swift */; };
 		1E3B5BC22C1C738400F7B37E /* MarshmelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */; };
@@ -30,6 +29,8 @@
 		1E3B5BEA2C1CD65300F7B37E /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BE92C1CD65300F7B37E /* LocationView.swift */; };
 		1E3B5BF62C1CFEBD00F7B37E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */; };
 		1EC71FA52C1D162D00CE5297 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EC71FA42C1D162C00CE5297 /* confetti.json */; };
+		1EC71FA72C1D267D00CE5297 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC71FA62C1D267D00CE5297 /* GuideView.swift */; };
+		1EC71FA82C1D2F1100CE5297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B5BB52C1C733400F7B37E /* Assets.xcassets */; };
 		510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E236F2C1CEEED0048B2B3 /* middle fire_g.json */; };
 		510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23702C1CEEED0048B2B3 /* small fire_g.json */; };
 		510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */ = {isa = PBXBuildFile; fileRef = 510E23712C1CEEED0048B2B3 /* big fire_g.json */; };
@@ -63,6 +64,7 @@
 		1E3B5BE92C1CD65300F7B37E /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		1E3B5BF52C1CFEBD00F7B37E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		1EC71FA42C1D162C00CE5297 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		1EC71FA62C1D267D00CE5297 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		510E236F2C1CEEED0048B2B3 /* middle fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "middle fire_g.json"; sourceTree = "<group>"; };
 		510E23702C1CEEED0048B2B3 /* small fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "small fire_g.json"; sourceTree = "<group>"; };
 		510E23712C1CEEED0048B2B3 /* big fire_g.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "big fire_g.json"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				1E3B5BE92C1CD65300F7B37E /* LocationView.swift */,
 				1E3B5BBF2C1C736D00F7B37E /* OnboardingView.swift */,
 				1E3B5BC12C1C738400F7B37E /* MarshmelloView.swift */,
+				1EC71FA62C1D267D00CE5297 /* GuideView.swift */,
 				1E3B5BDB2C1C86B400F7B37E /* LottieView.swift */,
 			);
 			path = View;
@@ -234,6 +237,7 @@
 				1E3B5BD22C1C797400F7B37E /* SUIT-Heavy.otf in Resources */,
 				1E3B5BD42C1C797400F7B37E /* SUIT-SemiBold.otf in Resources */,
 				1E3B5BD62C1C797400F7B37E /* SUIT-ExtraBold.otf in Resources */,
+				1EC71FA82C1D2F1100CE5297 /* Assets.xcassets in Resources */,
 				510E23752C1CEEEE0048B2B3 /* middle fire_g.json in Resources */,
 				510E23762C1CEEEE0048B2B3 /* small fire_g.json in Resources */,
 				1E3B5BE62C1CBD6100F7B37E /* fire.json in Resources */,
@@ -245,7 +249,6 @@
 				1E3B5BCF2C1C797400F7B37E /* SUIT-Regular.otf in Resources */,
 				510E23772C1CEEEE0048B2B3 /* big fire_g.json in Resources */,
 				1E3B5BD72C1C797400F7B37E /* SUIT-Bold.otf in Resources */,
-				1E3B5BB62C1C733400F7B37E /* Assets.xcassets in Resources */,
 				1E3B5BD02C1C797400F7B37E /* SUIT-Light.otf in Resources */,
 				510E23782C1CEEEE0048B2B3 /* big fire.json in Resources */,
 				1E3B5BD12C1C797400F7B37E /* SUIT-ExtraLight.otf in Resources */,
@@ -269,6 +272,7 @@
 				1E3B5BB22C1C733200F7B37E /* MarshmelloApp.swift in Sources */,
 				1E3B5BF62C1CFEBD00F7B37E /* HapticManager.swift in Sources */,
 				1E3B5BDC2C1C86B400F7B37E /* LottieView.swift in Sources */,
+				1EC71FA72C1D267D00CE5297 /* GuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

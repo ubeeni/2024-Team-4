@@ -19,8 +19,8 @@ struct GuideView: View {
                 
                 VStack {
                     Text("\(currentPage + 1)/\(totalPages)")
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(.white)
+                        .suit(.bold, 20)
+                        .foregroundStyle(.white)
                         .padding(.top, 30)
                     
                     Spacer()
